@@ -35,7 +35,7 @@
         @RenderBody()
         <div id="sideBar">
             <p><b>Archive by month</b></p>
-            @{int countu = 0; }
+ 
             @{int thisYear = DateTime.Now.Year;}
 
             @for (int year = 0; year < 3; year++)
@@ -50,12 +50,12 @@
                             if (linkText.Length > 0)
                             {
                                 <li> @Html.ActionLink(linkText, "Month", new { yyyymm = currentYear.ToString() + month }) </li>
-                            countu++;
+                      
                             }
                         }
                     </ul>
                             }
-            <p>@countu</p>
+           
         </div>
         <hr />
         <footer>

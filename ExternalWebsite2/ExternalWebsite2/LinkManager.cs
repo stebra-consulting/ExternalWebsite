@@ -20,7 +20,7 @@ namespace ExternalWebsite2
 
             foreach (var o in globalNews)
             {
-                string strDate = o.IntDate.ToString();      //"20150909"
+                string strDate = o.IntDate.ToString();      //"20150908"
                 string mmDate = strDate.Substring(4, 2);    //"09"
                 string yyyyDate = strDate.Substring(0, 4);  //"2015"
                 if (mmDate == mm && yyyyDate == yyyy)

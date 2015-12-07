@@ -1,0 +1,18 @@
+﻿@model List<ExternalWebsite2.Models.StebraEntity>
+
+@{
+    ViewBag.Title = "Nyheter";
+}
+
+<div class="row">
+    @foreach (var item in Model)
+    {
+        <div class="col-md-12">
+            <h2>@item.Title</h2>
+            <p><i>@item.Date @Html.Raw(item.Article)</i></p>
+            <p>
+                @Html.Raw(item.Body)
+            </p>
+        </div>
+    }
+</div>

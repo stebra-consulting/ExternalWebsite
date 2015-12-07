@@ -80,7 +80,7 @@ namespace ExternalWebsite2
             IEnumerable<StebraEntity> iEnumType = listType;
             
             iEnumType = (from o in newsToSort
-                         where o.Title == itemTitle     //yymmdd
+                         where UrlManager.MakeURLFriendly(o.Title) == itemTitle
                                  
                          select o);
 

@@ -59,12 +59,11 @@ namespace ExternalWebsite2.Controllers
 
 
         [HttpGet]
-        public ActionResult Nyheter(string title)
+        public ActionResult Nyheter(string id)
         {
-            if (title != null)
+            if (id != null)
             {
-                string itemTitle = title;
-                itemTitle = itemTitle.Replace("-", " ");
+                string itemTitle = id;
 
                 List<StebraEntity> news = new List<StebraEntity>();
 

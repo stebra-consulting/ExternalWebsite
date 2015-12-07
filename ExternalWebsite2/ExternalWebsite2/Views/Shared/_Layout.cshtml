@@ -36,13 +36,13 @@
         @RenderBody()
         <div id="sideBar">
             <p><b>Archive by month</b></p>
- 
+
             @{int thisYear = DateTime.Now.Year;}
 
             @for (int year = 0; year < 3; year++)
             {
                 int currentYear = thisYear - year;
-                    <p class="years" id="test">@currentYear  +</p>
+                <p class="years" id="test">@currentYear  +</p>
                     <ul id="linkTree">
                         @{string[] months = new[] { "12", "11", "10", "09", "08", "07", "06", "05", "04", "03", "02", "01" };}
                         @foreach (var month in months)
@@ -51,30 +51,36 @@
                             if (linkText.Length > 0)
                             {
                                 <li> @Html.ActionLink(linkText, "Month", new { id = currentYear.ToString() + month }) </li>
-                      
+
                             }
                         }
                     </ul>
                             }
-           
+
         </div>
         <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <a href="#top" class="well well-lg center-block" onclick="$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;" style="text-decoration:none; background-color:#e0e5e4">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                    <p>Back to Top</p>
+                </a>
+            </div>
+            <p>&copy; @DateTime.Now.Year - Stebra</p>
         </footer>
     </div>
     <script>
-    $("#thisyear").click(function () {
-        $("#thisyearold").toggle();
-    });
+        $("#thisyear").click(function () {
+            $("#thisyearold").toggle();
+        });
 
-    $("#oneyearbehind").click(function () {
-        $("#oneyearold").toggle();
-    });
+        $("#oneyearbehind").click(function () {
+            $("#oneyearold").toggle();
+        });
 
-    $("#twoyearsbehind").click(function () {
-        $("#twoyearsold").toggle();
-    });
+        $("#twoyearsbehind").click(function () {
+            $("#twoyearsold").toggle();
+        });
     </script>
 </body>
 </html>

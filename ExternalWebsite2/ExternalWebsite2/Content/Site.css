@@ -42,7 +42,10 @@ display:none;
 display:none;
 }
 
+.well{
+    box-shadow:none;
+}
 
-.panel-body ~ img{
-
+.news{
+    padding-top:25px;
 }

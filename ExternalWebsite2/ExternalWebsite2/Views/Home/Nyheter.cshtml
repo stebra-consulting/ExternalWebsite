@@ -1,15 +1,8 @@
 ﻿@model List<ExternalWebsite2.Models.StebraEntity>
 
 @{
-    ViewBag.Title = "Home Page";
+    ViewBag.Title = "Nyheter";
 }
-
-<div class="jumbotron">
-    <h1>NewsFlash</h1>
-    <p class="lead">Steaming fresh news from our dinner table... indulge!</p>
-</div>
-
-
 
 <div class="row">
     @foreach (var item in Model)
@@ -20,7 +13,6 @@
             <p>
                 @Html.Raw(item.Body)
             </p>
-            <p>@Html.ActionLink("Link to Article", "Nyheter", new { title = @item["Title"].Replace(" ", "-") })</p>
         </div>
     }
 </div>

@@ -44,14 +44,14 @@ namespace ExternalWebsite2.Controllers
         }
 
         [HttpGet]
-        public ActionResult Month(string yyyymm)
+        public ActionResult Month(string id)
         {
             List<StebraEntity> news = new List<StebraEntity>();
 
             //Get news from AzureTable
             news = AzureManager.LoadNews();
 
-            news = SortByDateManager.ByMonth(news, yyyymm);
+            news = SortByDateManager.ByMonth(news, id);
 
             return View(news);
         }

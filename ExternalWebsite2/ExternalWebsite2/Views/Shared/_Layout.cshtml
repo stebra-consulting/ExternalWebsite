@@ -50,7 +50,7 @@
                             string linkText = LinkManager.LinkText(month, currentYear);
                             if (linkText.Length > 0)
                             {
-                                <li> @Html.ActionLink(linkText, "Month", new { yyyymm = currentYear.ToString() + month }) </li>
+                                <li> @Html.ActionLink(linkText, "Month", new { id = currentYear.ToString() + month }) </li>
                       
                             }
                         }

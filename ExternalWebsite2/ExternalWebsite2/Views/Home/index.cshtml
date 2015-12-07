@@ -9,9 +9,24 @@
     <p class="lead">Steaming fresh news from our dinner table... indulge!</p>
 </div>
 
+<div class="container">
+    @foreach (var item in Model)
+    {
+        <div class="row">
+            <div class="col-md-12">
+                <h2>@item.Title</h2>
+                <div class="thumbnail">
+                    <img src="http://www.waywood.com/images/test.jpg" alt="Alternate Text" />
+                </div>
+                @* @Html.Raw(item.Body) *@
+                <div class="article">@Html.Raw(item.Article)</div>
+                <p>@item.Date</p>
+            </div>
+        </div>
+    }
+</div> 
 
-
-<div class="row">
+@*<div class="row">
     @foreach (var item in Model)
     {
         <div class="col-md-12">
@@ -22,4 +37,29 @@
             </p>
         </div>
     }
+</div>*@
+
+@*
+<div class="row">
+        <table class="table table-striped">
+            @foreach (var item in Model)
+            {
+                <tr class="col-md-12">
+                    <td>
+                        <a href="#" class="thumbnail">
+                            <img src="http://www.waywood.com/images/test.jpg" alt="Alternate Text" />
+                        </a>
+                    </td>
+                    <td>
+                        <h2>@item.Title</h2>
+                        <div class="article">
+                            @Html.Raw(item.Article)
+                        </div>
+                        <a href="#">Read more...</a>
+                        @item.Date
+                    </td>
+                </tr>
+            }
+        </table>
 </div>
+*@

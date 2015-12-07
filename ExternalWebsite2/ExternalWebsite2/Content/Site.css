@@ -41,3 +41,8 @@ display:none;
 #twoyearsold {
 display:none;
 }
+
+.thumbnail{
+    width:550px;
+    height:350px;
+}

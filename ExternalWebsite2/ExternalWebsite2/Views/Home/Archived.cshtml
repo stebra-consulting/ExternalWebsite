@@ -18,6 +18,7 @@
             <p>
                 @Html.Raw(item.Body)
             </p>
+            <p>@Html.ActionLink("Link to Article", "Nyheter", new { title = @item.Title.Replace(" ", "-") })</p>
         </div>
     }
 </div>

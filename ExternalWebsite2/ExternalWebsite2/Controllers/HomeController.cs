@@ -61,19 +61,28 @@ namespace ExternalWebsite2.Controllers
         [HttpGet]
         public ActionResult Nyheter(string title)
         {
+            if (title != null)
+            {
+                string itemTitle = title;
+                itemTitle = itemTitle.Replace("-", " ");
 
-            string itemTitle = title;
-            itemTitle = itemTitle.Replace("-", " ");
-            
-            List<StebraEntity> news = new List<StebraEntity>();
-            
-            //Get news from AzureTable
-            news = AzureManager.LoadNews();
+                List<StebraEntity> news = new List<StebraEntity>();
 
-            news = SortByDateManager.ByTitle(news, itemTitle);
+                //Get news from AzureTable
+                news = AzureManager.LoadNews();
 
-            
-            return View(news);
+                news = SortByDateManager.ByTitle(news, itemTitle);
+
+
+                return View(news);
+            }
+            else
+            {
+                List<StebraEntity> news = new List<StebraEntity>();
+                news = null;
+                return View(news);
+            }
+           
         }
         
         public ActionResult About()

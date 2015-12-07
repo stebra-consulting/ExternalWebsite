@@ -71,5 +71,22 @@ namespace ExternalWebsite2
 
 
         }
+
+        public static List<StebraEntity> ByTitle(List<StebraEntity> newsToSort, string itemTitle)
+        {
+            
+            List<StebraEntity> listType = new List<StebraEntity>();
+
+            IEnumerable<StebraEntity> iEnumType = listType;
+            
+            iEnumType = (from o in newsToSort
+                         where o.Title == itemTitle     //yymmdd
+                                 
+                         select o);
+
+            listType = iEnumType.ToList();
+
+            return listType;
+        }
     }
 }

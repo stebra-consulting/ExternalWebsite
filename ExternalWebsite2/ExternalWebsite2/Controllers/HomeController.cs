@@ -57,6 +57,34 @@ namespace ExternalWebsite2.Controllers
         }
 
 
+
+        [HttpGet]
+        public ActionResult Nyheter(string title)
+        {
+            if (title != null)
+            {
+                string itemTitle = title;
+                itemTitle = itemTitle.Replace("-", " ");
+
+                List<StebraEntity> news = new List<StebraEntity>();
+
+                //Get news from AzureTable
+                news = AzureManager.LoadNews();
+
+                news = SortByDateManager.ByTitle(news, itemTitle);
+
+
+                return View(news);
+            }
+            else
+            {
+                List<StebraEntity> news = new List<StebraEntity>();
+                news = null;
+                return View(news);
+            }
+           
+        }
+        
         public ActionResult About()
         {
             ViewBag.Message = "Your application description page.";

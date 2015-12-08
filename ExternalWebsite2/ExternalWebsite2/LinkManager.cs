@@ -29,7 +29,7 @@ namespace ExternalWebsite2
                 }
             }
 
-            if (count == 0) { return ""; } //cancel execution, there is no news to fetch
+            if (count == 0) { return ""; } //cancel execution, there is no news to retrieve
 
             string month = "";
 

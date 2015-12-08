@@ -3,6 +3,8 @@
 
 #edited 08-11-2015
 web.config
+bin
+obj
 
 # User-specific files
 *.suo

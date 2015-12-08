@@ -6,7 +6,7 @@ $(document).ready(
     function () {
         $('img').each(
             function () {
-                $(this).addClass('img-responsive');
+                $(this).addClass('thumbnail img-responsive');
             }
         );
     }

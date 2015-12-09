@@ -11,8 +11,10 @@ Web.config
 web.config
 
 ExternalWebsite\ExternalWebsite2\ExternalWebsite2\
-[Bb]in/
-[Oo]bj/
+bin/
+
+ExternalWebsite\ExternalWebsite2\ExternalWebsite2\
+obj/
 
 # User-specific files
 *.suo

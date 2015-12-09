@@ -6,6 +6,14 @@ ExternalWebsite\ExternalWebsite2\ExternalWebsite2\test
 Web.config
 web.config
 
+ExternalWebsite\ExternalWebsite2\ExternalWebsite2\
+Web.config
+web.config
+
+ExternalWebsite\ExternalWebsite2\ExternalWebsite2\
+[Bb]in/
+[Oo]bj/
+
 # User-specific files
 *.suo
 *.user

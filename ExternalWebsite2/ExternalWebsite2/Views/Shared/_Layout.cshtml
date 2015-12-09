@@ -53,30 +53,30 @@
                         </li>
                                     }
 
-                       
-                    </ul>
 
-                </div>
+                </ul>
+
             </div>
         </div>
+    </div>
 
-        <div class="container body-content">
+    <div class="container body-content">
 
-            
-            <hr />
-            @RenderBody()
 
-            <footer class="container-fluid text-center">
-                <div class="row">
-                    <a href="#top" class="well well-lg center-block" onclick="$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;" style="text-decoration:none; background-color:#e0e5e4">
-                        <i class="glyphicon glyphicon-chevron-up"></i>
-                        <p>Back to Top</p>
-                    </a>
-                </div>
-                <p>&copy; @DateTime.Now.Year - Stebra</p>
-            </footer>
-        </div>
-       
+        <hr />
+        @RenderBody()
 
-    </body>
+        <footer class="container-fluid text-center">
+            <div class="row">
+                <a href="#top" class="well well-lg center-block" onclick="$('html, body').animate({ scrollTop: 0 }, 'slow'); return false;" style="text-decoration:none; background-color:#e0e5e4">
+                    <i class="glyphicon glyphicon-chevron-up"></i>
+                    <p>Back to Top</p>
+                </a>
+            </div>
+            <p>&copy; @DateTime.Now.Year - Stebra</p>
+        </footer>
+    </div>
+
+
+</body>
 </html>

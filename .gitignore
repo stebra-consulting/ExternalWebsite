@@ -3,7 +3,8 @@
 
 #Custom Section
 ExternalWebsite\ExternalWebsite2\ExternalWebsite2\test
-*.config
+Web.config
+web.config
 
 # User-specific files
 *.suo

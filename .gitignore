@@ -7,8 +7,7 @@ Web.config
 web.config
 
 ExternalWebsite\ExternalWebsite2\ExternalWebsite2
-Web.config
-web.config
+*.config
 
 ExternalWebsite\ExternalWebsite2\ExternalWebsite2\
 bin/
@@ -21,7 +20,6 @@ obj/
 *.user
 *.userosscache
 *.sln.docstates
-*.config
 
 # User-specific files (MonoDevelop/Xamarin Studio)
 *.userprefs

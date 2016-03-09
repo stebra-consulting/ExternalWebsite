@@ -129,9 +129,13 @@
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <None Include="Properties\PublishProfiles\newsflashed - FTP.pubxml" />
+    <None Include="Properties\PublishProfiles\newsflashed - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - FTP %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\newsflashon - FTP %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - Web Deploy %282%29.pubxml" />
+    <None Include="Properties\PublishProfiles\newsflashon - Web Deploy %283%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

@@ -14,7 +14,7 @@ namespace ExternalWebsite2
     public class AzureManager
     {
         //Config
-        private const string tableName = "stebraNyhetslist";
+        private const string tableName = "stebraNyhetslistDEV";
         private const string partitionKey = "Nyhet";
 
         //Connection to Azure Storage

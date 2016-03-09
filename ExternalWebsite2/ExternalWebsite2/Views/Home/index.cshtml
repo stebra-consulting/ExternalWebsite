@@ -50,6 +50,12 @@
 
                         <p>@Html.ActionLink("Link to Article", "Nyheter", new { id = UrlManager.MakeURLFriendly(@item.Title) })</p>
                         <p><i>@item.Date @Html.Raw(item.Article)</i></p>
+
+
+                        <script src="//platform.linkedin.com/in.js" type="text/javascript"></script>
+                        <script type="IN/Share" data-url="https://www.google.se" data-counter="right">
+                        </script>
+
                     </div>
                 </div>
             </div>

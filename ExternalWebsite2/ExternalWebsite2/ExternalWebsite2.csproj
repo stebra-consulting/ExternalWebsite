@@ -133,9 +133,11 @@
     <None Include="Properties\PublishProfiles\newsflashed - Web Deploy.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - FTP %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - FTP %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\newsflashon - FTP %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - FTP.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - Web Deploy %282%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - Web Deploy %283%29.pubxml" />
+    <None Include="Properties\PublishProfiles\newsflashon - Web Deploy %284%29.pubxml" />
     <None Include="Properties\PublishProfiles\newsflashon - Web Deploy.pubxml" />
     <None Include="Scripts\jquery-1.10.2.intellisense.js" />
     <Content Include="Scripts\jquery-1.10.2.js" />

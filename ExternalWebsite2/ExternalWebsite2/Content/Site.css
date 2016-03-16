@@ -50,14 +50,6 @@ display:none;
     padding-top:25px;
 }
 
-img {
-    height: auto;
-    max-width: 100%;
-    line-height: none !important;
-    background-color: none !important;
-    border:none !important;
-}
-
 .logo {
     padding:15px !important;
     float:left;
@@ -95,4 +87,11 @@ newsImg {
     border-style:solid;
     border-top-color:black;
     border-width:2px;
+}
+
+p, b, i, h1, h2, h3, h4 {
+    font-family:"Courier New", Courier, monospace;
+}
+p {
+    font-size:18px;
 }

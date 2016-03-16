@@ -4,9 +4,8 @@
     ViewBag.Title = "Home Page";
 }
 
-<div class="container text-center">
-    <img class="img-responsive" src="~/images/newsFlash.png" />
-    <p class="titles">Ångande färska nyheter från Stebra Consulting </p>
+<div class="container text-center intro">
+    <img class="img-responsive header" src="~/images/newsFlash.png" />
 </div>
 
 
@@ -35,13 +34,13 @@
     @foreach (var item in Model)
     {
         <div class="container-fluid">
-            <div class="panel panel-primary">
-                <div class="panel-heading">
+
                     <div class="col-lg-12">
+                        <hr />
                         <h2>@item.Title</h2>
+                        <hr />
                     </div>
-                </div>
-            </div>
+
             <div class="panel-body">
                 <div class="row">
                     <div class="col-lg-12">

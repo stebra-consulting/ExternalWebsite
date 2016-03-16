@@ -51,7 +51,6 @@ display:none;
 }
 
 img {
-    display: block;
     height: auto;
     max-width: 100%;
     line-height: none !important;
@@ -66,4 +65,34 @@ img {
 
 .titles {
 text-align:center;
+}
+
+.header {
+    display:block;
+    margin:auto;
+    text-align:center;
+
+}
+
+.intro {
+    padding:60px;
+
+
+}
+
+body {
+    background-image:url("../images/texture_seamless_repeat2.jpg");
+}
+
+hr {
+    border: none;
+    height: 2px !important;
+    /* Set the hr color */
+    color: #333; /* old IE */
+    background-color: #333; /* Modern Browsers */
+}
+newsImg {
+    border-style:solid;
+    border-top-color:black;
+    border-width:2px;
 }

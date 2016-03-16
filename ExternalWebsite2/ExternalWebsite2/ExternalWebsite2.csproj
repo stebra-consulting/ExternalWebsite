@@ -129,6 +129,7 @@
     <Content Include="images\newsFlash.png" />
     <Content Include="images\stebra_logo_black.jpg" />
     <Content Include="images\stebra_logo_white.png" />
+    <Content Include="images\texture_seamless_repeat2.jpg" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />

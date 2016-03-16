@@ -49,3 +49,21 @@ display:none;
 .news{
     padding-top:25px;
 }
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    line-height: none !important;
+    background-color: none !important;
+    border:none !important;
+}
+
+.logo {
+    padding:15px !important;
+    float:left;
+}
+
+.titles {
+text-align:center;
+}

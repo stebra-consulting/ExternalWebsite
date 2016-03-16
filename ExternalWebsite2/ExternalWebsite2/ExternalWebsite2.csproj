@@ -126,6 +126,9 @@
     <Content Include="Content\Site.css" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
     <Content Include="Global.asax" />
+    <Content Include="images\newsFlash.png" />
+    <Content Include="images\stebra_logo_black.jpg" />
+    <Content Include="images\stebra_logo_white.png" />
     <Content Include="Scripts\App.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
